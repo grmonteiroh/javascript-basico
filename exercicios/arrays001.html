@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        let lista =["arroz", "batata", "leite", "tomate", "sabão em pó"];
+        lista[0] = "feijão";
+        lista.push("pasta de dente");
+        console.log(lista);
+
+        for(let i = 0; i < 3; i++){
+            let item = prompt("Insira os itens a serem adicionados");
+            lista.push(item);
+        }
+        console.log(lista);
+
+        lista.unshift("tacos");
+        console.log(lista);
+
+        lista.pop();
+        console.log(lista);
+
+        lista.shift();
+        console.log(lista);
+
+        console.log("Na lista há " + lista.length + " itens.");
+
+        let i = 0;
+        while(i < lista.length){
+            console.log(lista[i]);
+            i++;
+        }
+    </script>
+</body>
+</html>

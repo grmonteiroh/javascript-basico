@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays 2</title>
+</head>
+<body>
+    <script>
+        let board = [
+        ['T','C','B','Q','K','B','C','T'], 
+        ['P','P','P','P','P','P','P','P'],
+        [' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' '],
+        [' ',' ',' ',' ',' ',' ',' ',' '],
+        ['p','p','p','p','p','p','p','p'],
+        ['t','c','b','q','k','b','c','t']
+        ];
+
+        console.log(board.join('\n'));
+
+        console.log("\n\nFazendo o peão avançar!");
+        board[4][4] = board[6][4];
+        board[6][4] = ' ';
+        console.log(board.join('\n'));
+
+        console.log("\n\nMovendo o cavalo!");
+        board[2][2] = board[0][1];
+        board[0][1] = ' ';
+
+        console.log(board.join('\n'));
+    </script>
+</body>
+</html>
