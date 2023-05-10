@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        let contato = {
+            "nome":"Carlos",
+            "email":"email@email.com",
+            "telefone":"(31)98754-4321",
+            "dizerOi":function(){alert("Oi, eu sou o "+this.nome);} 
+        };
+
+        alert("O email salvo no contato de "+contato.nome+" é "+contato.email);
+        contato.dizerOi();
+
+        let agenda = [ 
+            { "nome":"Carlos",
+            "email": "email@email.com",
+            "telefone": "(31)98765-4321" },
+            { "nome":"Dias",
+            "email": "dias@email.com",
+            "telefone": "(31)12345-6789" }
+        ]
+
+        alert("O contato 1 é o " + agenda[1].nome + " com email " + agenda[1].email);
+    </script>
+</body>
+</html>

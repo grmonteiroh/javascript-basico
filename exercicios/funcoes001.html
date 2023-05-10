@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções 01</title>
+</head>
+<body>
+    <script>
+        function f (x) {
+            return Math.pow(x,2)+2*x+1
+        }
+
+        let f2 = f(2);
+        console.log("A função f(2) = " + f2)
+
+        function logVolume (x,y,z) {
+            let v = x*y*z;
+            console.log("Dimensões: "+x+","+y+","+z);
+            console.log("O volume desse paralelepípedo será: "+v);
+        }
+
+        logVolume(2,3,2);
+
+        function printArray (lista){
+            console.log("No array há " + lista.length + " itens.");
+
+            let i = 0;
+            while(i < lista.length){
+                console.log(lista[i]);
+                i++;
+            }
+        }
+
+        let lista2 = ["arroz", "batata", "leite", "tomate", "sabão em pó"];
+        printArray(lista2);
+    </script>
+</body>
+</html>
